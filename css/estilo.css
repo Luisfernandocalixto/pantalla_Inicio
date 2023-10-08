@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(../img/wallpaper.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    -webkit-animation-name: animarsuperior;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animarsuperior;
+    animation-duration: 0.5s;
+}
+
+.m-llamada {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.m-llamada img {
+    cursor: pointer;
+}
+
+.mensaje {
+    font-family: Arial;
+    background-color: #413f3f;
+    border-radius: 8px;
+    width: 300px;
+    height: 50px;
+    color: #fff;
+    padding: 20px 0px 30px 0px;
+    text-indent: 20px;
+    line-height: 20px;
+}
+
+.mensaje img {
+    vertical-align: sub;
+}
+
+.user {
+    padding-bottom: 20px;
+    height: 20px;
+    background-color: #f7b733;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 30px 0px;
+}
+
+.opciones>div {
+    padding: 10px;
+    color: #fff;
+}
+
+.m-reloj {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 300px;
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+}
+
+#ventanaModal2 {
+    width: 300px;
+    background-color: transparent;
+    -webkit-animation-name: animarsuperior;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animarsuperior;
+    animation-duration: 0.5s;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@-webkit-keyframes animarsuperior {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    top {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes animarsuperior {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+
+    top {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes salir {
+    to {
+
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes salir {
+    to {
+        opacity: 0;
+    }
+}
